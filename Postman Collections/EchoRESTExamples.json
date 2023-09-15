@@ -563,6 +563,18 @@
 					"body": "{\n    \"args\": {},\n    \"data\": \"This is expected to be sent back as part of response body.\",\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"x-forwarded-port\": \"443\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-62692617-104361bf7d627e6c6c47b515\",\n        \"content-length\": \"58\",\n        \"content-type\": \"text/plain\",\n        \"user-agent\": \"PostmanRuntime/7.29.0\",\n        \"accept\": \"*/*\",\n        \"cache-control\": \"no-cache\",\n        \"postman-token\": \"ff833eb3-9bc9-4ff5-8068-bca6e7f85de5\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"cookie\": \"sails.sid=s%3A-tymA6xssWACCc-pCxzq_KrZ1gjltiqV.he%2BU3JpRmz6P9WRfZSJWMsTVcDHAeL7blFA2PBR5dz0\"\n    },\n    \"json\": null,\n    \"url\": \"https://postman-echo.com/delete\"\n}"
 				}
 			]
+		},
+		{
+			"name": "New Request",
+			"id": "83f231b1-bad1-443c-adae-8702d008360c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
