@@ -565,7 +565,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "GET NO Params",
 			"id": "3fa173bd-5bb1-4bd2-82da-489f17c44f7c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
