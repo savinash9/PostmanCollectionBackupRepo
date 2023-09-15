@@ -565,7 +565,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "GET No Parms",
 			"id": "08e41ce2-062c-405a-8171-c15fc1e7cbed",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
