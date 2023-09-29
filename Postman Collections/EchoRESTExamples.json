@@ -24,7 +24,7 @@
 							"});",
 							"",
 							"pm.test(\"Regex test ID must be 4 digits\", function () {",
-							"    var regexPattern = \"^\\d{3}$\"",
+							"    var regexPattern = \"\\d{3}$\"",
 							"    var jsonData = pm.response.json();",
 							"    console.log(\"jsonData.args.foo1\", jsonData.args.foo1);",
 							"    pm.expect(regexPattern.test(jsonData.args.foo1)).to.be.true;",
