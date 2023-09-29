@@ -21,6 +21,11 @@
 							"pm.test(\"response body has json with request queries\", function () {",
 							"    pm.response.to.have.jsonBody('args.foo1', 'bar1')",
 							"        .and.have.jsonBody('args.foo2', 'bar2');",
+							"});",
+							"",
+							"pm.test(\"Regex test ID must be at least 7 digits\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(/\\d{7}/.test(jsonData.args.foo1)).to.be.true;",
 							"});"
 						],
 						"type": "text/javascript"
