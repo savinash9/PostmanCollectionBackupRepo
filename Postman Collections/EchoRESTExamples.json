@@ -20,7 +20,7 @@
 							"",
 							"pm.test(\"Regex Arg1 must be 5 digits\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    console.log(jsonData.args.foo1);",
+							"    console.log(\"arg1 value=\" + jsonData.args.foo1);",
 							"    //matches string with 5 digits",
 							"    pm.expect(/^[0-9]{5,5}$/.test(jsonData.args.foo1)).to.be.true;",
 							"});",
@@ -38,7 +38,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?foo1=12345&foo2=bar2",
+					"raw": "https://postman-echo.com/get?foo1=123456&foo2=bar2",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -50,7 +50,7 @@
 					"query": [
 						{
 							"key": "foo1",
-							"value": "12345"
+							"value": "123456"
 						},
 						{
 							"key": "foo2",
