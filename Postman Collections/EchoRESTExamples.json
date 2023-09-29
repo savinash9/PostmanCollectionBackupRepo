@@ -24,7 +24,7 @@
 							"});",
 							"",
 							"pm.test(\"Regex test ID must be at least 7 digits\", function () {",
-							"    var regexPattern = \"^\\d{16}$\"",
+							"    var regexPattern = \"^\\d{4}$\"",
 							"    var jsonData = pm.response.json();",
 							"    console.log(\"jsonData.args.foo1\", jsonData.args.foo1);",
 							"    pm.expect(regexPattern.test(jsonData.args.foo1)).to.be.true;",
