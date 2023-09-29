@@ -25,6 +25,7 @@
 							"",
 							"pm.test(\"Regex test ID must be at least 7 digits\", function () {",
 							"    var jsonData = pm.response.json();",
+							"    console.log(\"jsonData.args.foo1\", jsonData.args.foo1);",
 							"    pm.expect(/\\d{4}/.test(jsonData.args.foo1)).to.be.true;",
 							"});"
 						],
