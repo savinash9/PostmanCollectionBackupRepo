@@ -23,7 +23,7 @@
 							"        .and.have.jsonBody('args.foo2', 'bar2');",
 							"});",
 							"",
-							"pm.test(\"Regex test ID must be at least 7 digits\", function () {",
+							"pm.test(\"Regex test ID must be at least 4 digits\", function () {",
 							"    var regexPattern = \"^\\d{4}$\"",
 							"    var jsonData = pm.response.json();",
 							"    console.log(\"jsonData.args.foo1\", jsonData.args.foo1);",
