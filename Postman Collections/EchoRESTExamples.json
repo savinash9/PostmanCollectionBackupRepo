@@ -22,7 +22,7 @@
 							"    var jsonData = pm.response.json();",
 							"    console.log(jsonData.args.foo1);",
 							"    //matches string with 5 digits",
-							"    pm.expect(/^[0-9]{5,5}$/.test(jsonData.user.id)).to.be.true;",
+							"    pm.expect(/^[0-9]{5,5}$/.test(jsonData.args.foo1)).to.be.true;",
 							"});",
 							""
 						],
