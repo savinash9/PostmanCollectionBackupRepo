@@ -23,13 +23,12 @@
 							"        .and.have.jsonBody('args.foo2', 'bar2');",
 							"});",
 							"",
-							"pm.test(\"Regex test ID must be 4 digits\", function () {",
-							"    var regexPattern = \"/\\d{4}$\"",
+							"pm.test(\"Regex test ID must be 7 digits\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    console.log(\"jsonData.args.foo1\", jsonData.args.foo1);",
-							"    pm.expect(/\\d{3}/.test(jsonData.args.foo1)).to.be.true;",
+							"    console.log(jsonData.user.id);",
+							"    //matches string with 7 digits",
+							"    pm.expect(/^[0-9]{7,7}$/.test(jsonData.user.id)).to.be.true;",
 							"});",
-							"",
 							""
 						],
 						"type": "text/javascript"
