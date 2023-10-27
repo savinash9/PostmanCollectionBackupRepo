@@ -46,7 +46,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar3",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -62,7 +62,7 @@
 						},
 						{
 							"key": "foo2",
-							"value": "bar2"
+							"value": "bar3"
 						}
 					]
 				},
@@ -328,7 +328,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "a9cd52ef-d8cb-47a2-93e3-58aa1b779ea4",
 						"exec": [
 							"pm.test(\"response is ok\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -339,7 +339,7 @@
 							"        'This is expected to be sent back as part of response body.');",
 							"});"
 						],
-						"id": "a9cd52ef-d8cb-47a2-93e3-58aa1b779ea4"
+						"type": "text/javascript"
 					}
 				}
 			],
@@ -494,7 +494,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
 							"pm.test(\"response is ok\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -505,7 +505,7 @@
 							"        'This is expected to be sent back as part of response body.');",
 							"});"
 						],
-						"id": "940141aa-7fb2-44f1-9600-b429896a6186"
+						"type": "text/javascript"
 					}
 				}
 			],
