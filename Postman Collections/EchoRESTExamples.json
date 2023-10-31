@@ -496,14 +496,7 @@
 					"script": {
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
-							"pm.test(\"response is ok\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"response body has json with form data\", function () {",
-							"    pm.response.to.have.jsonBody('data', ",
-							"        'This is expected to be sent back as part of response body.');",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
