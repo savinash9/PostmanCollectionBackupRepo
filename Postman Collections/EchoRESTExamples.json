@@ -46,7 +46,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+					"raw": "https://postman-echo.com/get?foo1=bar3&foo2=bar2",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -58,7 +58,7 @@
 					"query": [
 						{
 							"key": "foo1",
-							"value": "bar1"
+							"value": "bar3"
 						},
 						{
 							"key": "foo2",
