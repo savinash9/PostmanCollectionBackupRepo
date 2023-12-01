@@ -497,7 +497,7 @@
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(201);",
 							"});"
 						],
 						"type": "text/javascript"
