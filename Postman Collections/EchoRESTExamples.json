@@ -496,7 +496,10 @@
 					"script": {
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
-							""
+							"//added test to check status code",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
 						],
 						"type": "text/javascript"
 					}
