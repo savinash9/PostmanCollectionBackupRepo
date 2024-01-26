@@ -570,5 +570,34 @@
 				}
 			]
 		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"value": "value",
+			"key": "key"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a17dd6a9-4c50-40f5-ac4b-787a9c784628",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c4b73fd2-483c-4a5e-980c-9e441c8d2480",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
 	]
 }
