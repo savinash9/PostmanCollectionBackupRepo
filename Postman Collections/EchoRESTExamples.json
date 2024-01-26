@@ -574,7 +574,7 @@
 	"auth": {
 		"type": "apikey",
 		"apikey": {
-			"value": "blah",
+			"value": "testValue",
 			"key": "pm_keg"
 		}
 	},
@@ -582,7 +582,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "fd50c3d0-b64d-4f65-b49d-f415c2908017",
+				"id": "28b9652b-16df-4557-b00e-4b658b865638",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -592,7 +592,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4e670009-bbdb-45cc-b0f3-f9c89aa50311",
+				"id": "549d91ce-59e5-495f-80fe-023c2c3dffc0",
 				"type": "text/javascript",
 				"exec": [
 					""
