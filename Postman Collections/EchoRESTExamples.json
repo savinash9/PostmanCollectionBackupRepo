@@ -571,18 +571,11 @@
 			]
 		}
 	],
-	"auth": {
-		"type": "apikey",
-		"apikey": {
-			"value": "testValue",
-			"key": "pm_keg"
-		}
-	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "28b9652b-16df-4557-b00e-4b658b865638",
+				"id": "ab8b30c8-1cd2-401e-b9d5-00ea4ffb219d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -592,7 +585,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "549d91ce-59e5-495f-80fe-023c2c3dffc0",
+				"id": "fbc36124-1e62-48e9-8f3a-f9cb56190c22",
 				"type": "text/javascript",
 				"exec": [
 					""
