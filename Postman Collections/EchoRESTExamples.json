@@ -71,7 +71,7 @@
 			"response": [
 				{
 					"id": "184a626c-cf48-4533-8df4-629e22fe4577",
-					"name": "GET Request",
+					"name": "GET Request 200",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
