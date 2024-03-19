@@ -572,11 +572,17 @@
 			]
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "11111111121"
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b896e56c-edd0-485d-9c3a-6f4b39bc40cd",
+				"id": "a92545cf-620f-43cd-a90b-e466e339fc19",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -586,7 +592,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2e6b0842-4b4c-4cdd-bfd8-c004e0ac7412",
+				"id": "f556a047-703d-4867-8b4e-f0db5ed7dad7",
 				"type": "text/javascript",
 				"exec": [
 					""
