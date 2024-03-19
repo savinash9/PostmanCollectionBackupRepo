@@ -46,7 +46,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
+					"raw": "https://postman-echo.com/get?foo1=bar2&foo2=bar3",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -58,11 +58,11 @@
 					"query": [
 						{
 							"key": "foo1",
-							"value": "bar1"
+							"value": "bar2"
 						},
 						{
 							"key": "foo2",
-							"value": "bar2"
+							"value": "bar3"
 						}
 					]
 				},
@@ -496,7 +496,10 @@
 					"script": {
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
-							""
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.value).to.eql(100);",
+							"});"
 						],
 						"type": "text/javascript"
 					}
