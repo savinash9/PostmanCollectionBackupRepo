@@ -220,6 +220,24 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"args\": {},\n    \"data\": \"This is expected to be sent back as part of response body.\",\n    \"files\": {},\n    \"form\": {},\n    \"headers\": {\n        \"x-forwarded-proto\": \"https\",\n        \"x-forwarded-port\": \"443\",\n        \"host\": \"postman-echo.com\",\n        \"x-amzn-trace-id\": \"Root=1-62692504-2637ebc016fc39d20779c3ab\",\n        \"content-length\": \"58\",\n        \"content-type\": \"text/plain\",\n        \"user-agent\": \"PostmanRuntime/7.29.0\",\n        \"accept\": \"*/*\",\n        \"cache-control\": \"no-cache\",\n        \"postman-token\": \"4a108912-d4a0-4bdb-8f21-c12818ed681d\",\n        \"accept-encoding\": \"gzip, deflate, br\",\n        \"cookie\": \"sails.sid=s%3A6AxJen4Bb37BqnTVLlDQT_kb_X5F87RW.6Hygsj5yGRsr0bSdYx2o0fPNjN4ZN4YbZEH3iRIBCRg\"\n    },\n    \"json\": null,\n    \"url\": \"https://postman-echo.com/post\"\n}"
+				},
+				{
+					"id": "f15dcc4f-26f5-412c-acb9-3254e50dab41",
+					"name": "POST Raw Text",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "This is expected to be sent back as part of response body."
+						},
+						"url": "https://postman-echo.com/post"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
 				}
 			]
 		},
