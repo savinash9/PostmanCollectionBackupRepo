@@ -587,11 +587,17 @@
 			]
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "1234567890"
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2387fe1d-e5c2-4cc7-a8d8-6adc83962147",
+				"id": "f1515d0e-5975-479d-b11f-4fb9b9973ee3",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -601,7 +607,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "06291830-522e-4364-8439-4b3719d21c35",
+				"id": "01bfcf55-38c1-4a0a-9f19-eeb229205cff",
 				"type": "text/javascript",
 				"exec": [
 					""
