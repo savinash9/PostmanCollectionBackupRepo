@@ -46,7 +46,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?foo1=bar5&foo2=bar7",
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -58,11 +58,11 @@
 					"query": [
 						{
 							"key": "foo1",
-							"value": "bar5"
+							"value": "bar1"
 						},
 						{
 							"key": "foo2",
-							"value": "bar7"
+							"value": "bar2"
 						}
 					]
 				},
@@ -514,30 +514,6 @@
 					"script": {
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
-							"",
-							"pm.test(\"Response status code is 200\", function () {",
-							"    pm.expect(pm.response.code).to.equal(200);",
-							"});",
-							"",
-							"",
-							"pm.test(\"Content-Type header is application/json\", function () {",
-							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
-							"});",
-							"",
-							"",
-							"pm.test(\"Args object should be empty\", function () {",
-							"    const responseData = pm.response.json();",
-							"    ",
-							"    pm.expect(responseData.args).to.be.an('object').that.is.empty;",
-							"});",
-							"",
-							"",
-							"pm.test(\"Data field in the response body matches the expected value\", function () {",
-							"    const responseData = pm.response.json();",
-							"    ",
-							"    pm.expect(responseData.data).to.eql(\"This is expected to be sent back as part of response body.\");",
-							"});",
-							"",
 							""
 						],
 						"type": "text/javascript"
@@ -611,17 +587,11 @@
 			]
 		}
 	],
-	"auth": {
-		"type": "bearer",
-		"bearer": {
-			"token": "11111111121"
-		}
-	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a92545cf-620f-43cd-a90b-e466e339fc19",
+				"id": "2387fe1d-e5c2-4cc7-a8d8-6adc83962147",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -631,7 +601,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f556a047-703d-4867-8b4e-f0db5ed7dad7",
+				"id": "06291830-522e-4364-8439-4b3719d21c35",
 				"type": "text/javascript",
 				"exec": [
 					""
