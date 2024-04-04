@@ -247,7 +247,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "9922f1c3-2a47-4cab-a9ca-3c5d5028c4d9",
 						"exec": [
 							"pm.test(\"response is ok\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -258,7 +258,7 @@
 							"        .and.have.jsonBody('form.foo2', 'bar2');",
 							"});"
 						],
-						"id": "9922f1c3-2a47-4cab-a9ca-3c5d5028c4d9"
+						"type": "text/javascript"
 					}
 				}
 			],
@@ -587,17 +587,11 @@
 			]
 		}
 	],
-	"auth": {
-		"type": "bearer",
-		"bearer": {
-			"token": "1234567890"
-		}
-	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f1515d0e-5975-479d-b11f-4fb9b9973ee3",
+				"id": "7176d9fa-3fac-43d4-88f9-3dfa08a9889d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -607,7 +601,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "01bfcf55-38c1-4a0a-9f19-eeb229205cff",
+				"id": "bacb33a0-c1f3-4d03-ac31-337e48c45660",
 				"type": "text/javascript",
 				"exec": [
 					""
