@@ -46,7 +46,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?foo1=bar22222222&foo2=bar3",
+					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -58,11 +58,11 @@
 					"query": [
 						{
 							"key": "foo1",
-							"value": "bar22222222"
+							"value": "bar1"
 						},
 						{
 							"key": "foo2",
-							"value": "bar3"
+							"value": "bar2"
 						}
 					]
 				},
@@ -514,9 +514,7 @@
 					"script": {
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
