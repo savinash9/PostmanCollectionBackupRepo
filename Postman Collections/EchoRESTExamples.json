@@ -256,9 +256,12 @@
 							"pm.test(\"response body has json with form data\", function () {",
 							"    pm.response.to.have.jsonBody('form.foo1', 'bar1')",
 							"        .and.have.jsonBody('form.foo2', 'bar2');",
-							"});"
+							"});",
+							"",
+							"console.log(\"dummy-vault-ssn\" + \"{{vault:dummy-ssn}}\")"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -280,6 +283,11 @@
 						{
 							"key": "foo2",
 							"value": "bar2",
+							"type": "text"
+						},
+						{
+							"key": "ssn",
+							"value": "{{vault:dummy-ssn}}",
 							"type": "text"
 						}
 					]
