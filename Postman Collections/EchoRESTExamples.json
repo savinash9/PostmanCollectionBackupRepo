@@ -14,13 +14,7 @@
 					"script": {
 						"id": "5f45abd0-ef7a-4b5c-babc-4bbad73e9ffb",
 						"exec": [
-							"pm.test(\"response is ok\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(200);",
-							"});",
+							"const pkg = pm.require(\"test-status-time\")",
 							"",
 							"pm.test(\"Regex Arg1 must be 5 digits\", function () {",
 							"    var jsonData = pm.response.json();",
