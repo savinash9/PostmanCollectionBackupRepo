@@ -32,6 +32,9 @@
 							"console.log(input);",
 							"//World Hello",
 							"",
+							"postman.setNextRequest(\"PM Vault Key\");",
+							"",
+							"",
 							""
 						],
 						"type": "text/javascript",
