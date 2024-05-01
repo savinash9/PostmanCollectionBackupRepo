@@ -16,7 +16,7 @@
 						"exec": [
 							"const pkg = pm.require(\"test-status-time\");",
 							"",
-							"pkg.",
+							"pkg.baseResponseStatusTimeCheck(pm.response);",
 							"",
 							"pm.test(\"Regex Arg1 must be 5 digits\", function () {",
 							"    var jsonData = pm.response.json();",
