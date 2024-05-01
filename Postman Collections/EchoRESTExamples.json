@@ -14,7 +14,7 @@
 					"script": {
 						"id": "5f45abd0-ef7a-4b5c-babc-4bbad73e9ffb",
 						"exec": [
-							"const pkg = pm.require('test-status-time');",
+							"const pkg = pm.require('@technology-demo/test-status-time');",
 							"",
 							"pkg.baseResponseStatusTimeCheck(pm.response);",
 							"",
@@ -35,7 +35,11 @@
 							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {
+							"@technology-demo/test-status-time": {
+								"id": "018f35a1-6f80-71a2-8349-79febe60119b"
+							}
+						}
 					}
 				}
 			],
