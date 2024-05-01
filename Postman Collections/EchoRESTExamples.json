@@ -32,6 +32,7 @@
 							"console.log(input);",
 							"//World Hello",
 							"",
+							"//Using \"postman.setNextRequest\" is deprecated. Use \"pm.execution.setNextRequest()\" instead.",
 							"postman.setNextRequest(\"PM Vault Key\");",
 							"",
 							"",
