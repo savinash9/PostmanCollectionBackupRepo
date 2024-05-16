@@ -14,9 +14,9 @@
 					"script": {
 						"id": "5f45abd0-ef7a-4b5c-babc-4bbad73e9ffb",
 						"exec": [
-							"const pkg = pm.require('@technology-demo/test-status-time', '200', 200);",
+							"const pkg = pm.require('@technology-demo/test-status-time');",
 							"",
-							"pkg.baseResponseStatusTimeCheck(pm.response);",
+							"pkg.baseResponseStatusTimeCheck(pm.response, 200, 200);",
 							"",
 							"pm.test(\"Regex Arg1 must be 5 digits\", function () {",
 							"    var jsonData = pm.response.json();",
