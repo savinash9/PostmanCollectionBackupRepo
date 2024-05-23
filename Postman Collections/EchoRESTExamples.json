@@ -267,6 +267,7 @@
 							"        .and.have.jsonBody('form.foo2', 'bar2');",
 							"});",
 							"",
+							"//You can't set or access vault secrets in scripts.",
 							"console.log(\"dummy-vault-ssn\" + pm.environment.get(\"vault-ssn\"));"
 						],
 						"type": "text/javascript",
@@ -613,7 +614,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?vault={{vault:pm-api-key}}",
+					"raw": "https://postman-echo.com/get?vault={{vault:pm-api-key}}&vault-env={{vault-ssn}}",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -626,6 +627,10 @@
 						{
 							"key": "vault",
 							"value": "{{vault:pm-api-key}}"
+						},
+						{
+							"key": "vault-env",
+							"value": "{{vault-ssn}}"
 						}
 					]
 				}
