@@ -638,17 +638,11 @@
 			"response": []
 		}
 	],
-	"auth": {
-		"type": "bearer",
-		"bearer": {
-			"token": "1234567890"
-		}
-	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1a2d688f-2b9f-4d56-89d4-ebb087323fec",
+				"id": "7f945c55-ae36-4220-a776-de9db8927583",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -658,7 +652,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "13de7c93-a44d-4adc-9743-8a793eeb174f",
+				"id": "3c6994c2-84bf-4be0-877f-aa24db2e2b9c",
 				"type": "text/javascript",
 				"exec": [
 					""
