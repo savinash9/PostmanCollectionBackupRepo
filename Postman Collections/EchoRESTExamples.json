@@ -267,7 +267,7 @@
 							"        .and.have.jsonBody('form.foo2', 'bar2');",
 							"});",
 							"",
-							"console.log(\"dummy-vault-ssn\" + \"{{vault:dummy-ssn}}\")"
+							"console.log(\"dummy-vault-ssn\" + pm.environment.get(\"vault-ssn\"));"
 						],
 						"type": "text/javascript",
 						"packages": {}
