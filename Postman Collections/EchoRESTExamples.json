@@ -532,9 +532,43 @@
 					"script": {
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.to.have.status(200));",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"//test comment introduced",
+							"pm.test(\"Response contains expected fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.args).to.exist;",
+							"    pm.expect(responseData.data).to.exist;",
+							"    pm.expect(responseData.files).to.exist;",
+							"    pm.expect(responseData.form).to.exist;",
+							"    pm.expect(responseData.headers).to.exist;",
+							"    pm.expect(responseData.json).to.exist;",
+							"    pm.expect(responseData.url).to.exist;",
+							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b64e4349-51d8-4ff0-9e32-1faf72b4d670",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
