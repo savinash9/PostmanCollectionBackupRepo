@@ -697,7 +697,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?vault={{vault:pm-api-key}}&vault-ssn-env={{vault-ssn-env}}&vault-apikey-env={{vault-postman_api_key-env}}",
+					"raw": "https://postman-echo.com/get?vault={{vault:pm-api-key}}&vault-ssn-env={{vault:dummy-ssn}}",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -713,11 +713,7 @@
 						},
 						{
 							"key": "vault-ssn-env",
-							"value": "{{vault-ssn-env}}"
-						},
-						{
-							"key": "vault-apikey-env",
-							"value": "{{vault-postman_api_key-env}}"
+							"value": "{{vault:dummy-ssn}}"
 						}
 					]
 				},
