@@ -258,10 +258,9 @@
 					"script": {
 						"id": "9922f1c3-2a47-4cab-a9ca-3c5d5028c4d9",
 						"exec": [
-							"",
 							"const pkg = pm.require('@technology-demo/test-status-time');",
 							"",
-							"pkg.baseResponseStatusTimeCheck(pm.response, 201, 500);",
+							"pkg.baseResponseStatusTimeCheck(pm.response, 200, 200);",
 							"",
 							"pm.test(\"response body has json with form data\", function () {",
 							"    pm.response.to.have.jsonBody('form.foo1', 'bar1')",
