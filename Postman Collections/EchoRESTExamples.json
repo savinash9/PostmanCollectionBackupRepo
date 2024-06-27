@@ -258,9 +258,7 @@
 					"script": {
 						"id": "9922f1c3-2a47-4cab-a9ca-3c5d5028c4d9",
 						"exec": [
-							"const pkg = pm.require('@technology-demo/test-status-time');",
 							"",
-							"pkg.baseResponseStatusTimeCheck(pm.response, 200, 200);",
 							"",
 							"pm.test(\"response body has json with form data\", function () {",
 							"    pm.response.to.have.jsonBody('form.foo1', 'bar1')",
@@ -271,11 +269,7 @@
 							"console.log(\"dummy-vault-ssn\" + pm.environment.get(\"vault-ssn\"));"
 						],
 						"type": "text/javascript",
-						"packages": {
-							"@technology-demo/test-status-time": {
-								"id": "018f35a1-6f80-71a2-8349-79febe60119b"
-							}
-						}
+						"packages": {}
 					}
 				}
 			],
