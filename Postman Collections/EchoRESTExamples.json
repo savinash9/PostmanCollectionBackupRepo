@@ -377,9 +377,15 @@
 							"pm.test(\"response body has json with form data\", function () {",
 							"    pm.response.to.have.jsonBody('data', ",
 							"        'This is expected to be sent back as part of response body.');",
+							"});",
+							"",
+							"pm.test(\"Response data length is valid\", function () {",
+							"    var responseData = pm.response.json();",
+							"    pm.expect(Object.keys(responseData).length).to.be.greaterThan(0, \"Response data should not be empty\");",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
