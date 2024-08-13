@@ -661,11 +661,17 @@
 			"response": []
 		}
 	],
+	"auth": {
+		"type": "basic",
+		"basic": {
+			"username": ""
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "567e8c0f-74a3-483d-a13e-43139df09cac",
+				"id": "70e8e744-9305-4a47-b5cf-e977ce6bc06f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -675,7 +681,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "621359f7-cb3c-44f3-bedf-e9c2052ce089",
+				"id": "9a37f022-7a07-40a7-aa9c-2b57cfe08b36",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
