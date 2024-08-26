@@ -703,16 +703,17 @@
 		}
 	],
 	"auth": {
-		"type": "basic",
-		"basic": {
-			"username": ""
+		"type": "apikey",
+		"apikey": {
+			"key": "api-key",
+			"value": "12344566743243"
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "70e8e744-9305-4a47-b5cf-e977ce6bc06f",
+				"id": "d80b3b19-92f1-4340-a6ae-bbb76fcfabbb",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -722,7 +723,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9a37f022-7a07-40a7-aa9c-2b57cfe08b36",
+				"id": "41d39a0e-f615-4905-b011-97116ba95075",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
