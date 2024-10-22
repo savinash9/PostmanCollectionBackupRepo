@@ -700,6 +700,18 @@
 				"description": "### GET Request Description\n\nThis endpoint makes an HTTP GET request to retrieve data from the specified URL. The request includes query parameters such as `vault`, `vault-ssn-env`, and `vault-apikey-env`.\n\n### Request Body\n\nThis request does not include a request body.\n\n### Response Body\n\nThe response of this request is a JSON schema. It contains the schema definition for the structure of the response data."
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "1a075f70-39ed-4ac9-b451-c4ff4613ae7e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
