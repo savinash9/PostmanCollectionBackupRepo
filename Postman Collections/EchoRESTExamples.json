@@ -683,20 +683,42 @@
 				},
 				"description": "### GET Request Description\n\nThis endpoint makes an HTTP GET request to retrieve data from the specified URL. The request includes query parameters such as `vault`, `vault-ssn-env`, and `vault-apikey-env`.\n\n### Request Body\n\nThis request does not include a request body.\n\n### Response Body\n\nThe response of this request is a JSON schema. It contains the schema definition for the structure of the response data."
 			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "1a075f70-39ed-4ac9-b451-c4ff4613ae7e",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "http://www.larryhack.com/api.buceo/api/dive/32/0/1.4/true"
-			},
-			"response": []
+			"response": [
+				{
+					"id": "b314c7bb-2eea-4b33-8377-ba8c2ac24c7f",
+					"name": "PM Vault Key",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://postman-echo.com/get?vault={{vault:pm-api-key}}&vault-ssn-env={{vault:dummy-ssn}}",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "vault",
+									"value": "{{vault:pm-api-key}}"
+								},
+								{
+									"key": "vault-ssn-env",
+									"value": "{{vault:dummy-ssn}}"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
+				}
+			]
 		}
 	],
 	"event": [
