@@ -620,7 +620,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?vault={{vault:pm-api-key}}&vault-ssn-env={{vault:dummy-ssn}}",
+					"raw": "https://postman-echo.com/get?vault={{vault:pm-api-key}}&vault-ssn-env={{vault:dummy-ssn}}&hashi-corp-secret={{vault:dev_key}}",
 					"protocol": "https",
 					"host": [
 						"postman-echo",
@@ -637,6 +637,11 @@
 						{
 							"key": "vault-ssn-env",
 							"value": "{{vault:dummy-ssn}}"
+						},
+						{
+							"key": "hashi-corp-secret",
+							"value": "{{vault:dev_key}}",
+							"type": "text"
 						}
 					]
 				},
