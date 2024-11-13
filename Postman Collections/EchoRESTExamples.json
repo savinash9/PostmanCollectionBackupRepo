@@ -33,7 +33,7 @@
 							"//World Hello",
 							"",
 							"//Using \"postman.setNextRequest\" is deprecated. Use \"pm.execution.setNextRequest()\" instead.",
-							"postman.setNextRequest(\"PM Vault Key\");",
+							"//postman.setNextRequest(\"PM Vault Key\");",
 							"",
 							"",
 							""
@@ -437,18 +437,18 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
+						"id": "5295e501-da09-47db-b9e6-7611c2c41e49",
 						"exec": [
-							"pm.test(\"response is ok\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
+							"const pkg = pm.require('@technology-demo/test-status-time');",
 							"",
-							"pm.test(\"response body has json with form data\", function () {",
-							"    pm.response.to.have.jsonBody('data', ",
-							"        'This is expected to be sent back as part of response body.');",
-							"});"
+							"pkg.baseResponseStatusTimeCheck(pm.response, 200, 200);"
 						],
-						"id": "5295e501-da09-47db-b9e6-7611c2c41e49"
+						"type": "text/javascript",
+						"packages": {
+							"@technology-demo/test-status-time": {
+								"id": "018f35a1-6f80-71a2-8349-79febe60119b"
+							}
+						}
 					}
 				}
 			],
