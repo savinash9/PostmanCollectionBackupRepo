@@ -629,6 +629,19 @@
 		},
 		{
 			"name": "PM Vault Key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f4e175ce-3c41-4a3e-b02e-bd78b62563c7",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "5602d022-fe75-4455-9024-b9422b0ce2e0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
