@@ -55,11 +55,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?foo1=bar1&foo2=bar2",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/get?foo1=bar1&foo2=bar2",
 					"host": [
-						"postman-echo",
-						"com"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"get"
@@ -162,7 +160,8 @@
 							"        'This is expected to be sent back as part of response body.');",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -177,7 +176,7 @@
 					"mode": "raw",
 					"raw": "This is expected to be sent back as part of response body"
 				},
-				"url": "https://postman-echo.com/post",
+				"url": "{{baseUrl}}/post",
 				"description": "The HTTP `POST` request method is meant to transfer data to a server \n(and elicit a response). What data is returned depends on the implementation\nof the server.\n\nA `POST` request can pass parameters to the server using \"Query String \nParameters\", as well as the Request Body. For example, in the following request,\n\n> POST /hi/there?hand=wave\n>\n> <request-body>\n\nThe parameter \"hand\" has the value \"wave\". The request body can be in multiple\nformats. These formats are defined by the MIME type of the request. The MIME \nType can be set using the ``Content-Type`` HTTP header. The most commonly used \nMIME types are:\n\n* `multipart/form-data`\n* `application/x-www-form-urlencoded`\n* `application/json`\n\nThis endpoint echoes the HTTP headers, request parameters, the contents of\nthe request body and the complete URI requested."
 			},
 			"response": [
@@ -291,11 +290,9 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://postman-echo.com/post?ssn-key=303-49-2949",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/post?ssn-key=303-49-2949",
 					"host": [
-						"postman-echo",
-						"com"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"post"
@@ -303,8 +300,7 @@
 					"query": [
 						{
 							"key": "ssn-key",
-							"value": "303-49-2949",
-							"type": "text"
+							"value": "303-49-2949"
 						}
 					]
 				},
@@ -401,7 +397,7 @@
 					"mode": "raw",
 					"raw": "This is expected to be sent back as part of response body."
 				},
-				"url": "https://postman-echo.com/put",
+				"url": "{{baseUrl}}/put",
 				"description": "The HTTP `PUT` request method is similar to HTTP `POST`. It too is meant to \ntransfer data to a server (and elicit a response). What data is returned depends on the implementation\nof the server.\n\nA `PUT` request can pass parameters to the server using \"Query String \nParameters\", as well as the Request Body. For example, in the following \nraw HTTP request,\n\n> PUT /hi/there?hand=wave\n>\n> <request-body>\n\n\n"
 			},
 			"response": [
@@ -480,7 +476,7 @@
 					"mode": "raw",
 					"raw": "This is expected to be sent back as part of response body."
 				},
-				"url": "https://postman-echo.com/patch",
+				"url": "{{baseUrl}}/patch",
 				"description": "The HTTP `PATCH` method is used to update resources on a server. The exact  \nuse of `PATCH` requests depends on the server in question. There are a number  \nof server implementations which handle `PATCH` differently. Technically,  \n`PATCH` supports both Query String parameters and a Request Body.\n\nThis endpoint accepts an HTTP `PATCH` request and provides debug information  \nsuch as the HTTP headers, Query String arguments, and the Request Body."
 			},
 			"response": [
@@ -572,7 +568,7 @@
 					"mode": "raw",
 					"raw": "This is expected to be sent back as part of response body."
 				},
-				"url": "https://postman-echo.com/delete",
+				"url": "{{baseUrl}}/delete",
 				"description": "The HTTP `DELETE` method is used to delete resources on a server. The exact\nuse of `DELETE` requests depends on the server implementation. In general, \n`DELETE` requests support both, Query String parameters as well as a Request \nBody.\n\nThis endpoint accepts an HTTP `DELETE` request and provides debug information\nsuch as the HTTP headers, Query String arguments, and the Request Body."
 			},
 			"response": [
@@ -650,11 +646,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://postman-echo.com/get?vault-api-key={{vault:pm-api-key}}&vault-ssn={{vault:dummy-ssn}}&hashi-corp-secret={{vault:dev_key}}&hashi-corp-pwd={{vault:dev_password}}",
-					"protocol": "https",
+					"raw": "{{baseUrl}}/get?vault-api-key={{vault:pm-api-key}}&vault-ssn={{vault:dummy-ssn}}&hashi-corp-secret={{vault:dev_key}}&hashi-corp-pwd={{vault:dev_password}}",
 					"host": [
-						"postman-echo",
-						"com"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"get"
@@ -739,6 +733,12 @@
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://postman-echo.com"
 		}
 	]
 }
