@@ -276,6 +276,17 @@
 							}
 						}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8a2127bf-ce03-4216-9bdd-be85fcde6b18",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
 				}
 			],
 			"id": "c85b7d9e-ff21-4b90-8c48-89580660375a",
@@ -287,23 +298,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "{{baseUrl}}/post?ssn-key=303-49-2949",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"post"
-					],
-					"query": [
-						{
-							"key": "ssn-key",
-							"value": "303-49-2949"
+					"raw": "{\n    \"test1\": {{test1}},\n    \"test2\": \"{{test2}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
+				"url": "{{baseUrl}}/post",
 				"description": "The HTTP `POST` request method is meant to transfer data to a server \n(and elicit a response). What data is returned depends on the implementation\nof the server.\n\nA `POST` request can pass parameters to the server using \"Query String \nParameters\", as well as the Request Body. For example, in the following request,\n\n> POST /hi/there?hand=wave\n>\n> <request-body>\n\nThe parameter \"hand\" has the value \"wave\". The request body can be in multiple\nformats. These formats are defined by the MIME type of the request. The MIME \nType can be set using the ``Content-Type`` HTTP header. The most commonly used \nMIME types are:\n\n* `multipart/form-data`\n* `application/x-www-form-urlencoded`\n* `application/json`\n\nThis endpoint echoes the HTTP headers, request parameters, the contents of\nthe request body and the complete URI requested when data is sent as a form parameter."
 			},
 			"response": [
@@ -716,7 +718,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0e3e2af8-c5e2-4d03-b5c9-1f9d6813a606",
+				"id": "8c43b320-fd4c-4e16-bb7f-82a4e2e64b7b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -726,7 +728,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "461bdadd-f8a3-42a4-b23e-d3d53b439d46",
+				"id": "5f91312e-a08a-4716-a578-e9cc86fea582",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -739,11 +741,6 @@
 		{
 			"key": "baseUrl",
 			"value": "https://postman-echo.com"
-		},
-		{
-			"key": "post-form-data",
-			"value": "",
-			"type": "string"
 		}
 	]
 }
