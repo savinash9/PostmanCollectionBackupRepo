@@ -626,7 +626,7 @@
 			]
 		},
 		{
-			"name": "PM Vault Key",
+			"name": "PM Vault Values",
 			"event": [
 				{
 					"listen": "test",
