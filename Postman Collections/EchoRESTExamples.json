@@ -648,7 +648,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/get?vault-api-key={{vault:pm-api-key}}&vault-ssn={{vault:dummy-ssn}}&hashi-corp-secret={{vault:dev_key}}&hashi-corp-pwd={{vault:dev_password}}",
+					"raw": "{{baseUrl}}/get?vault-api-key={{vault:pm-api-key}}&vault-ssn={{vault:dummy-ssn}}&hashi-corp-secret={{vault:dev_key}}&hashi-corp-pwd={{vault:dev_password}}&apikey-from-aws={{vault:apikey-from-aws}}",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -671,6 +671,11 @@
 						{
 							"key": "hashi-corp-pwd",
 							"value": "{{vault:dev_password}}"
+						},
+						{
+							"key": "apikey-from-aws",
+							"value": "{{vault:apikey-from-aws}}",
+							"type": "text"
 						}
 					]
 				},
