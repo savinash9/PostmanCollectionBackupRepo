@@ -717,18 +717,6 @@
 					"body": null
 				}
 			]
-		},
-		{
-			"name": "New Request",
-			"id": "ddce047b-b297-4fa9-8c71-908f42b01339",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"event": [
