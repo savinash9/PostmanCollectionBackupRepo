@@ -653,7 +653,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/get?vault-api-key={{vault:pm-api-key}}&vault-ssn={{vault:dummy-ssn}}&dev-key={{vault:dev_key}}&dev-pwd={{vault:dev_password}}&apikey-from-aws={{vault:apikey-from-aws}}&first-secret={{vault:first-secret}}",
+					"raw": "{{baseUrl}}/get?vault-api-key={{vault:pm-api-key}}&vault-ssn={{vault:dummy-ssn}}&dev-key={{vault:dev_key}}&dev-pwd={{vault:dev_password}}&apikey-from-aws={{vault:apikey-from-aws}}",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -680,10 +680,6 @@
 						{
 							"key": "apikey-from-aws",
 							"value": "{{vault:apikey-from-aws}}"
-						},
-						{
-							"key": "first-secret",
-							"value": "{{vault:first-secret}}"
 						}
 					]
 				},
