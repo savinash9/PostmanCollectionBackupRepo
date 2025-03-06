@@ -55,7 +55,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/get?foo1=bar1&foo2=bar2&ssn=565-68-7775",
+					"raw": "{{baseUrl}}/get?foo1=bar1&foo2=bar2&num1=10&num2=20",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -72,8 +72,13 @@
 							"value": "bar2"
 						},
 						{
-							"key": "ssn",
-							"value": "565-68-7775",
+							"key": "num1",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "num2",
+							"value": "20",
 							"type": "text"
 						}
 					]
