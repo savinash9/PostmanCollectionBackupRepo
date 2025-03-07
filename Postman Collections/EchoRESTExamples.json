@@ -40,7 +40,9 @@
 							"    var jsonData = pm.response.json();",
 							"    var sum = Number(jsonData.args.num1) + Number(jsonData.args.num2);",
 							"    console.log(\"Sum of num1 and num2 is: \" + sum);",
-							"});"
+							"});",
+							"",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {
