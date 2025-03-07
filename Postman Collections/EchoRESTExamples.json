@@ -36,7 +36,11 @@
 							"//postman.setNextRequest(\"PM Vault Key\");",
 							"",
 							"",
-							""
+							"pm.test(\"Add num1 and num2 numbers and display the result in the console\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    var sum = Number(jsonData.args.num1) + Number(jsonData.args.num2);",
+							"    console.log(\"Sum of num1 and num2 is: \" + sum);",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {
@@ -73,13 +77,11 @@
 						},
 						{
 							"key": "num1",
-							"value": "10",
-							"type": "text"
+							"value": "10"
 						},
 						{
 							"key": "num2",
-							"value": "20",
-							"type": "text"
+							"value": "20"
 						}
 					]
 				},
