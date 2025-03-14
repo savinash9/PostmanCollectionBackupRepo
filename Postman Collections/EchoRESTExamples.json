@@ -35,13 +35,6 @@
 							"//Using \"postman.setNextRequest\" is deprecated. Use \"pm.execution.setNextRequest()\" instead.",
 							"//postman.setNextRequest(\"PM Vault Key\");",
 							"",
-							"",
-							"pm.test(\"Add num1 and num2 numbers and display the result in the console\", function () {",
-							"    var jsonData = pm.response.json();",
-							"    var sum = Number(jsonData.args.num1) + Number(jsonData.args.num2);",
-							"    console.log(\"Sum of num1 and num2 is: \" + sum);",
-							"});",
-							"",
 							""
 						],
 						"type": "text/javascript",
@@ -61,7 +54,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/get?foo1=bar1&foo2=bar2&num1=10&num2=20",
+					"raw": "{{baseUrl}}/get?foo1=bar1&foo2=bar2",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -76,14 +69,6 @@
 						{
 							"key": "foo2",
 							"value": "bar2"
-						},
-						{
-							"key": "num1",
-							"value": "10"
-						},
-						{
-							"key": "num2",
-							"value": "20"
 						}
 					]
 				},
@@ -584,7 +569,27 @@
 					"mode": "raw",
 					"raw": "This is expected to be sent back as part of response body."
 				},
-				"url": "{{baseUrl}}/delete",
+				"url": {
+					"raw": "{{baseUrl}}/delete?num1=10&num2=20",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "num1",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "num2",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
 				"description": "The HTTP `DELETE` method is used to delete resources on a server. The exact\nuse of `DELETE` requests depends on the server implementation. In general, \n`DELETE` requests support both, Query String parameters as well as a Request \nBody.\n\nThis endpoint accepts an HTTP `DELETE` request and provides debug information\nsuch as the HTTP headers, Query String arguments, and the Request Body."
 			},
 			"response": [
