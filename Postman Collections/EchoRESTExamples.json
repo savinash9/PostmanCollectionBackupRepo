@@ -3,7 +3,7 @@
 		"_postman_id": "32cc13ef-c530-470b-8f7c-aff0fde65cb4",
 		"name": "Postman Echo REST Examples",
 		"description": "Postman Echo is service you can use to test your REST clients and make sample API calls. It provides endpoints for `GET`, `POST`, `PUT`, various auth mechanisms and other utility endpoints.\n\nThe documentation for the endpoints as well as example responses can be found at [https://postman-echo.com](https://postman-echo.com/?source=echo-collection-app-onboarding)",
-		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -455,7 +455,9 @@
 						"exec": [
 							"const pkg = pm.require('@technology-demo/test-status-time');",
 							"",
-							"pkg.baseResponseStatusTimeCheck(pm.response, 200, 200);"
+							"pkg.baseResponseStatusTimeCheck(pm.response, 200, 200);",
+							"",
+							"console.log(\"vault value: dummy-ssn: \" + await pm.vault.get(\"dummy-ssn\"));"
 						],
 						"type": "text/javascript",
 						"packages": {
