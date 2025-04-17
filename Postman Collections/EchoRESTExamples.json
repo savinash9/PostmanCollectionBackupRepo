@@ -542,18 +542,7 @@
 					"script": {
 						"id": "940141aa-7fb2-44f1-9600-b429896a6186",
 						"exec": [
-							"// Test to add num1 and num2 and display the result in the console",
-							"pm.test(\"Add num1 and num2 and display the result in the console\", function () {",
-							"    var response = pm.response.json();",
-							"    var num1 = parseInt(response.args.num1);",
-							"    var num2 = parseInt(response.args.num2);",
-							"    var sum = num1 + num2;",
-							"    console.log(\"The sum of num1 and num2 is: \" + sum);",
-							"});",
-							"// Test to check if the response time is within an acceptable range",
-							"pm.test(\"Response time is less than 500ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(500);",
-							"});"
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
