@@ -667,7 +667,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/get?vault-api-key={{vault:pm-api-key}}&vault-ssn={{vault:dummy-ssn}}&dev-key={{vault:dev_key}}&dev-pwd={{vault:dev_password}}&apikey-from-aws={{vault:apikey-from-aws}}&sa-pm-api-key-from-azure={{vault:sa-pm-api-key-from-azure}}",
+					"raw": "{{baseUrl}}/get?vault-api-key={{vault:apikey-local}}&vault-ssn={{vault:dummy-ssn}}&dev-key={{vault:dev_key}}&dev-pwd={{vault:dev_password}}&apikey-from-aws={{vault:apikey-from-aws}}&sa-pm-api-key-from-azure={{vault:sa-pm-api-key-from-azure}}",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -677,7 +677,7 @@
 					"query": [
 						{
 							"key": "vault-api-key",
-							"value": "{{vault:pm-api-key}}"
+							"value": "{{vault:apikey-local}}"
 						},
 						{
 							"key": "vault-ssn",
@@ -697,8 +697,7 @@
 						},
 						{
 							"key": "sa-pm-api-key-from-azure",
-							"value": "{{vault:sa-pm-api-key-from-azure}}",
-							"type": "text"
+							"value": "{{vault:sa-pm-api-key-from-azure}}"
 						}
 					]
 				},
