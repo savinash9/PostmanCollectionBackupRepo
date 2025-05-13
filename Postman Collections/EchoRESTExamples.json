@@ -590,7 +590,7 @@
 						}
 					]
 				},
-				"description": "The HTTP `DELETE` method is used to delete resources on a server. The exact\nuse of `DELETE` requests depends on the server implementation. In general, \n`DELETE` requests support both, Query String parameters as well as a Request \nBody.\n\nThis endpoint accepts an HTTP `DELETE` request and provides debug information\nsuch as the HTTP headers, Query String arguments, and the Request Body."
+				"description": "### Delete Resource\n\nThe HTTP `DELETE` method is used to delete resources on a server. This endpoint accepts an HTTP `DELETE` request with Query String parameters `num1` and `num2`.\n\n#### Query Parameters\n\n- `num1` (number): Represents the first number.\n    \n- `num2` (number): Represents the second number.\n    \n\nThe last execution of this request returned a `404` status code with a JSON response. Here is an example of the response schema:\n\n``` json\n{\n  \"error\": {\n    \"name\": \"\",\n    \"message\": \"\",\n    \"header\": \"\"\n  }\n}\n\n ```"
 			},
 			"response": [
 				{
