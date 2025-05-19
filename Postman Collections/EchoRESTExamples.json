@@ -667,7 +667,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/get?vault-api-key={{vault:apikey-local}}&vault-ssn={{vault:dummy-ssn}}&dev-key={{vault:dev_key}}&dev-pwd={{vault:dev_password}}&apikey-from-aws={{vault:apikey-from-aws}}&sa-pm-api-key-from-azure={{vault:apikey-from-azure}}",
+					"raw": "{{baseUrl}}/get?vault-api-key={{vault:apikey-local}}&vault-ssn={{vault:dummy-ssn}}&apikey-from-hashicorp={{vault:apikey-from-hashicorp}}&apikey-from-aws={{vault:apikey-from-aws}}&api-key-from-azure={{vault:apikey-from-azure}}",
 					"host": [
 						"{{baseUrl}}"
 					],
@@ -684,19 +684,15 @@
 							"value": "{{vault:dummy-ssn}}"
 						},
 						{
-							"key": "dev-key",
-							"value": "{{vault:dev_key}}"
-						},
-						{
-							"key": "dev-pwd",
-							"value": "{{vault:dev_password}}"
+							"key": "apikey-from-hashicorp",
+							"value": "{{vault:apikey-from-hashicorp}}"
 						},
 						{
 							"key": "apikey-from-aws",
 							"value": "{{vault:apikey-from-aws}}"
 						},
 						{
-							"key": "sa-pm-api-key-from-azure",
+							"key": "api-key-from-azure",
 							"value": "{{vault:apikey-from-azure}}"
 						}
 					]
