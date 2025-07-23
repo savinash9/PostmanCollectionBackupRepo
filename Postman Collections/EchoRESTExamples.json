@@ -297,7 +297,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"test1\": {{test1}},\n    \"test2\": \"{{test2}}\",\n    \"test3\" : \"{{vault:dummy-ssn}}\"\n}",
+					"raw": "{\n    \"test1\": {{test1}},\n    \"test2\": \"{{test2}}\",\n    \"ssn\" : \"204-73-5939\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
