@@ -42,7 +42,8 @@
 							"@technology-demo/test-status-time": {
 								"id": "018f35a1-6f80-71a2-8349-79febe60119b"
 							}
-						}
+						},
+						"requests": {}
 					}
 				}
 			],
