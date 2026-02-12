@@ -274,7 +274,8 @@
 							"@technology-demo/test-status-time": {
 								"id": "018f35a1-6f80-71a2-8349-79febe60119b"
 							}
-						}
+						},
+						"requests": {}
 					}
 				},
 				{
@@ -285,7 +286,8 @@
 							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -298,7 +300,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"test1\": {{test1}},\n    \"test2\": \"{{test2}}\"\n}",
+					"raw": "{\n    \"test1\": {{test1}},\n    \"test2\": \"{{test2}}\",\n        \"test3\": \"394-39-8482\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
