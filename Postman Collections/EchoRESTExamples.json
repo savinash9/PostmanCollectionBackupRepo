@@ -740,12 +740,19 @@
 			]
 		}
 	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "1782272"
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "8c43b320-fd4c-4e16-bb7f-82a4e2e64b7b",
+				"id": "06b3b2cb-96b3-43f6-ad54-65c66ea76053",
 				"type": "text/javascript",
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -754,9 +761,10 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5f91312e-a08a-4716-a578-e9cc86fea582",
+				"id": "752eda47-d1ce-453d-8e2d-01c834e9333f",
 				"type": "text/javascript",
 				"packages": {},
+				"requests": {},
 				"exec": [
 					""
 				]
